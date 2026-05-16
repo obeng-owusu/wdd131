@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temple Album | WDD131</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">Temple Album</div>
+
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                ☰
+            </button>
+        </div>
+
+        <nav id="navMenu">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Temple Album</h1>
+
+        <section class="gallery">
+
+            <figure>
+                <img src="images/salt-lake-temple.webp" alt="Salt Lake Temple" loading="lazy">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/washington-temple.webp" alt="Washington DC Temple" loading="lazy">
+                <figcaption>Washington DC Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/st-george-utah-temple.webp" alt="St George Utah Temple" loading="lazy">
+                <figcaption>St. George Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/logan-utah-temple.webp" alt="Logan Utah Temple" loading="lazy">
+                <figcaption>Logan Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/manti-utah-temple.webp" alt="Manti Utah Temple" loading="lazy">
+                <figcaption>Manti Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/laie-hawaii-temple.webp" alt="Laie Hawaii Temple" loading="lazy">
+                <figcaption>Laie Hawaii Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/mexico-city-temple.webp" alt="Mexico City Temple" loading="lazy">
+                <figcaption>Mexico City Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/london-england-temple.webp" alt="London England Temple" loading="lazy">
+                <figcaption>London England Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/rome-italy-temple.webp" alt="Rome Italy Temple" loading="lazy">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="currentYear"></span>
+            Temple Album | Joshua Obeng
+        </p>
+
+        <p>
+            Last Modified:
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+
+</body>
+
+</html>
