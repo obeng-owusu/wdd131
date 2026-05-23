@@ -1,0 +1,30 @@
+@media screen and (min-width: 768px) {
+
+    .hero {
+        position: relative;
+    }
+
+    .data {
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        width: 320px;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 40px;
+        right: 30px;
+        width: 280px;
+    }
+
+    /* Hide SVG icon in desktop view */
+    .weather-icon {
+        display: none;
+    }
+
+    /* Desktop emoticon using pseudo-element */
+    .weather h2::after {
+        content: " ⛅";
+    }
+}
