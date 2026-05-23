@@ -46,7 +46,7 @@ header {
 }
 
 /* =========================
-   NAVIGATION
+   NAVIGATION - DARKER BACKGROUND
 ========================= */
 nav {
     display: flex;
@@ -65,8 +65,8 @@ nav a {
     font-weight: 600;
     position: relative;
 
-    /* Darker background for better contrast */
-    background: rgba(255, 255, 255, 0.18);
+    /* DARKER BACKGROUND - UPDATED */
+    background: rgba(0, 0, 0, 0.35);
 
     transition:
         background 0.3s ease,
@@ -75,7 +75,8 @@ nav a {
 }
 
 nav a:hover {
-    background: rgba(255, 255, 255, 0.3);
+    /* DARKER ON HOVER - UPDATED */
+    background: rgba(0, 0, 0, 0.55);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -142,9 +143,7 @@ h1::after {
     background: #ffffff;
     border-radius: 16px;
     overflow: hidden;
-
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease;
@@ -152,7 +151,6 @@ h1::after {
 
 .card:hover {
     transform: translateY(-5px);
-
     box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
 }
 
@@ -192,7 +190,6 @@ h1::after {
 .card img {
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
     transition: transform 0.3s ease;
 }
 
@@ -219,7 +216,6 @@ h1::after {
     position: absolute;
     left: 0;
     color: #c89b00;
-    /* darker gold for better contrast */
     font-weight: bold;
 }
 
@@ -232,7 +228,6 @@ h1::after {
 
 .card ul li a:hover {
     color: #8a6a00;
-    /* accessible hover color */
     text-decoration: underline;
 }
 
@@ -258,7 +253,6 @@ footer p:first-child {
 #lastModified {
     font-size: 0.875rem;
     color: #d1d5db;
-    /* improved contrast */
     font-family: monospace;
 }
 
