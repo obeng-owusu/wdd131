@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ghana | WDD131 Place Project</title>
+
+    <meta name="description"
+        content="Discover Ghana including geography, weather, culture, and important country information.">
+    <meta name="author" content="Your Name">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ghana</h1>
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/ghana-large.webp">
+
+                <img src="images/ghana-small.webp" alt="Scenic landscape view of Ghana" width="1200" height="700">
+            </picture>
+
+            <section class="data">
+                <h2>Data</h2>
+
+                <p><strong>Area:</strong> 238,535 sq km</p>
+                <p><strong>Population:</strong> 34,121,985</p>
+                <p><strong>Capital:</strong> Accra</p>
+                <p><strong>Languages:</strong> English</p>
+                <p><strong>Currency:</strong> Ghana Cedi</p>
+                <p><strong>Time Zone:</strong> UTC</p>
+                <p><strong>Calling Code:</strong> +233</p>
+                <p><strong>Internet TLD:</strong> .gh</p>
+            </section>
+
+            <section class="weather">
+                <h2>Weather</h2>
+
+                <img src="images/weather.svg" alt="Partly cloudy weather icon" class="weather-icon">
+
+                <p>
+                    <strong>Temperature:</strong>
+                    <span id="temperature">28</span> °C
+                </p>
+
+                <p>
+                    <strong>Conditions:</strong>
+                    Sunny
+                </p>
+
+                <p>
+                    <strong>Wind:</strong>
+                    <span id="windspeed">10</span> km/h
+                </p>
+
+                <p>
+                    <strong>Wind Chill:</strong>
+                    <span id="windchill"></span>
+                </p>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            ©<span id="currentyear"></span>
+            🌴 Joshua Obeng 🌴 Ghana
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
