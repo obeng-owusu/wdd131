@@ -1,0 +1,64 @@
+/* Additional styles for larger screens and keyboard navigation */
+@media only screen and (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        max-height: none !important;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0;
+    }
+
+    nav li {
+        margin: 0;
+    }
+
+    nav button {
+        display: inline-block;
+        width: auto;
+        padding: 1rem 1.5rem;
+        text-align: center;
+    }
+
+    nav button:hover {
+        transform: translateY(-3px);
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .temple-name {
+        font-size: 1.3rem;
+    }
+}
+
+/* Focus styles for better accessibility */
+nav button:focus-visible,
+.hamburger:focus-visible {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 3px;
+    border-radius: 5px;
+}
+
+/* Print styles */
+@media print {
+
+    .hamburger,
+    nav,
+    .hamburger {
+        display: none;
+    }
+
+    .temple-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- REQUIRED META TAGS -->
+    <meta name="description"
+        content="Explore a collection of beautiful Latter-day Saint temples from around the world with dynamic filtering. Filter by old, new, large, or small temples.">
+    <meta name="author" content="Joshua Obeng">
+
+    <title>Filtered Temple Album | WDD131</title>
+
+    <!-- GOOGLE FONTS PRECONNECT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">⛪ Filtered Temple Album</div>
+
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                ☰
+            </button>
+        </div>
+
+        <nav id="navMenu">
+            <ul>
+                <li><button type="button" data-filter="home" class="active"> Home </button></li>
+                <li><button type="button" data-filter="old"> Old </button></li>
+                <li><button type="button" data-filter="new"> New </button></li>
+                <li><button type="button" data-filter="large"> Large </button></li>
+                <li><button type="button" data-filter="small"> Small </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-header">
+            <h1>Temple Album</h1>
+            <p class="temple-count" id="templeCount">Loading temples...</p>
+        </div>
+
+        <section class="gallery" id="templeGallery" aria-live="polite"
+            aria-label="Temple gallery showing filtered results">
+            <!-- Dynamic temple cards will be inserted here by JavaScript -->
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="currentYear"></span>
+            Temple Album | Joshua Obeng
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,288 @@
+/* =========================
+   ROOT VARIABLES
+========================= */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --secondary-dark: #1f6fb2;
+    --accent-color: #e74c3c;
+    --text-light: #ffffff;
+    --text-dark: #2c3e50;
+    --background-light: #f4f4f4;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+h1,
+.logo {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* =========================
+   HAMBURGER
+========================= */
+.hamburger {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.hamburger:hover {
+    transform: scale(1.1);
+}
+
+.hamburger:focus {
+    outline: 3px solid var(--text-light);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background-color: var(--primary-color);
+}
+
+nav.open {
+    max-height: 500px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 1rem;
+}
+
+nav li {
+    margin: 0.5rem 0;
+}
+
+nav button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: left;
+}
+
+nav button:hover,
+nav button.active {
+    background-color: var(--secondary-dark);
+    color: var(--text-light);
+    transform: translateX(8px);
+}
+
+nav button:focus {
+    outline: 3px solid var(--text-light);
+    outline-offset: 3px;
+    border-radius: 5px;
+}
+
+/* =========================
+   MAIN
+========================= */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.temple-count {
+    font-size: 0.95rem;
+    color: var(--secondary-dark);
+    background: white;
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    font-weight: 600;
+}
+
+/* =========================
+   GALLERY - Responsive Grid
+========================= */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    animation: fadeIn 0.4s ease;
+}
+
+/* Temple Card Styles using semantic article */
+.temple-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.temple-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.temple-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+    background-color: #e0e0e0;
+}
+
+.temple-info {
+    padding: 1rem;
+    flex: 1;
+}
+
+.temple-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.temple-detail {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.detail-label {
+    font-weight: 700;
+    color: var(--secondary-dark);
+    min-width: 85px;
+}
+
+.detail-value {
+    color: var(--text-dark);
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: white;
+    border-radius: 10px;
+    grid-column: 1 / -1;
+    box-shadow: var(--shadow);
+}
+
+.empty-state p {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.empty-state .suggestion {
+    font-size: 0.9rem;
+    color: var(--secondary-dark);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
