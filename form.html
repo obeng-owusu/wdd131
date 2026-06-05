@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <main class="review-container">
+        <h1>Product Review</h1>
+
+        <form method="get" action="review.html" class="review-form">
+
+            <label for="product-name">Product Name</label>
+            <select id="product-name" name="productName" required>
+                <option value="" selected disabled>Choose a Product ...</option>
+            </select>
+
+            <label>Overall Rating</label>
+
+            <div class="rating-group">
+                <label>
+                    ★
+                    <input type="radio" name="rating" value="1" required>
+                </label>
+
+                <label>
+                    ★★
+                    <input type="radio" name="rating" value="2">
+                </label>
+
+                <label>
+                    ★★★
+                    <input type="radio" name="rating" value="3">
+                </label>
+
+                <label>
+                    ★★★★
+                    <input type="radio" name="rating" value="4">
+                </label>
+
+                <label>
+                    ★★★★★
+                    <input type="radio" name="rating" value="5">
+                </label>
+            </div>
+
+            <label for="install-date">Date of Installation</label>
+            <input type="date" id="install-date" name="installDate" required>
+
+            <label>
+                Which features did you find useful in the product?
+                <em>(Check all that apply)</em>
+            </label>
+
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="features" value="Durability"> Durability</label>
+                <label><input type="checkbox" name="features" value="Ease of Use"> Ease of Use</label>
+                <label><input type="checkbox" name="features" value="Performance"> Performance</label>
+                <label><input type="checkbox" name="features" value="Design"> Design</label>
+            </div>
+
+            <label for="written-review">
+                Written Review
+                <span class="optional">(Optional)</span>
+            </label>
+
+            <textarea id="written-review" name="writtenReview"></textarea>
+
+            <label for="username">
+                Your Name
+                <span class="optional">(Optional)</span>
+            </label>
+
+            <input type="text" id="username" name="username">
+
+            <button type="submit" class="submit-btn">
+                Post Review
+            </button>
+
+        </form>
+    </main>
+
+    <!-- Common Footer -->
+    <footer class="common-footer">
+        <p>&copy; 2026 Product Review System | All Rights Reserved</p>
+        <p>Your feedback helps us improve</p>
+    </footer>
+
+    <script src="js/form.js"></script>
+</body>
+
+</html>
