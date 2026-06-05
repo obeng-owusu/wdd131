@@ -1,3 +1,4 @@
+// Product array
 const products = [
     { id: "fc-1888", name: "Flux Capacitor" },
     { id: "fc-2050", name: "Power Laces" },
@@ -6,7 +7,8 @@ const products = [
     { id: "jj-1969", name: "Warp Equalizer" }
 ];
 
-document.addEventListener("DOMContentLoaded", () => {
+// Wait for DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", function () {
 
     // Populate product select dropdown
     const select = document.getElementById("product-name");
@@ -23,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Handle review confirmation page
     if (window.location.pathname.includes("review.html")) {
 
+        // Increment and display review count
         let count = Number(localStorage.getItem("reviewCount")) || 0;
         count++;
         localStorage.setItem("reviewCount", count);
@@ -32,12 +35,11 @@ document.addEventListener("DOMContentLoaded", () => {
             counterElement.textContent = count;
         }
 
-        // Display form data in summary
+        // Display form data summary
         const urlParams = new URLSearchParams(window.location.search);
         const summaryDiv = document.getElementById('review-summary');
 
         if (summaryDiv && urlParams.toString()) {
-            // Get product name from ID
             let productId = urlParams.get('productName');
             let productName = productId;
             if (productId) {
@@ -53,8 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const writtenReview = urlParams.get('writtenReview');
             const username = urlParams.get('username');
 
-            let summaryHTML = '<h3>📋 Review Summary:</h3>';
-            summaryHTML += '<div class="summary-details">';
+            let summaryHTML = '<h3>Review Summary:</h3>';
+            summaryHTML += '<div style="background: #f9f9f9; padding: 10px; border-radius: 6px; margin-top: 10px;">';
             summaryHTML += `<p><strong>Product:</strong> ${productName || 'Not specified'}</p>`;
 
             if (rating) {
@@ -118,13 +120,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-// Console explanation for radio button naming
-console.log(`
-✅ Why each radio button in the rating group has the same name value:
-
-1. GROUPING: Radio buttons with the same name attribute are grouped together
-2. SINGLE SELECTION: Only one radio button in a group can be selected at a time
-3. AUTO-DESELECTION: Selecting one automatically deselects others in the same group
-4. FORM DATA: Only the selected value is sent with the form submission
-5. USER EXPERIENCE: Ensures users can only select one rating level
-`);
+console.log('form.js loaded successfully');
