@@ -1,0 +1,37 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F8F9FA;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Merriweather', serif;
+    color: #1E3A5F;
+}
+
+header,
+footer {
+    background-color: #1E3A5F;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+a {
+    color: #D4A017;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+}
