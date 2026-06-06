@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Scripture Memorizer is a web app that users memorize Bible verses through practice exercises, study tools and progress tracking.">
+    <meta name="description"
+        content="Scripture Memorizer is a web app that helps users memorize Bible verses through practice exercises, study tools and progress tracking.">
     <meta name="author" content="Joshua Owusu Obeng">
     <title>Scripture Memorizer Site Plan</title>
+
+    <!-- Google Fonts Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="siteplan.css">
 </head>
 
@@ -16,43 +24,108 @@
         <h1>Scripture Memorizer Site Plan</h1>
     </header>
 
-    ```
     <main>
+        <!-- Site Name Section with reason -->
         <section>
             <h2>Site Name</h2>
-            <p>Scripture Memorizer</p>
+            <p><strong>Scripture Memorizer</strong></p>
+            <p>
+                This name clearly describes the purpose of the website, which is helping users memorize Bible verses
+                through interactive study and practice tools. The name is direct, memorable, and immediately
+                communicates
+                the core function of the site to visitors.
+            </p>
+            <p><em>Optional domain availability:</em> scripture-memorizer.org</p>
         </section>
 
+        <!-- Site Purpose Section -->
         <section>
             <h2>Site Purpose</h2>
             <p>
-                This website helps users memorize scripture verses through
-                interactive practice, progress tracking, and organized verse collections.
+                The Scripture Memorizer website helps users memorize Bible verses through practice exercises,
+                scripture collections, memory tips, progress tracking, and interactive quizzes. The site provides
+                a structured approach to scripture memorization for individuals and small groups.
             </p>
         </section>
 
+        <!-- Scenarios Section (at least 2) -->
         <section>
-            <h2>Target Audience</h2>
-            <p>
-                Church members, students, missionaries, and anyone interested
-                in memorizing Bible verses.
-            </p>
+            <h2>Scenarios</h2>
+            <ul>
+                <li><strong>How can I improve my scripture memorization skills?</strong> - Users need practical
+                    techniques, study methods, and daily practice routines to effectively memorize verses.</li>
+                <li><strong>Which Bible verses should I memorize for faith and encouragement?</strong> - Users want
+                    curated verse collections categorized by themes like faith, hope, comfort, and spiritual growth.
+                </li>
+                <li><strong>How do I track my progress and see which verses I have already memorized?</strong> - Users
+                    need a dashboard showing memorization progress, review schedules, and mastered verses.</li>
+            </ul>
         </section>
 
+        <!-- Color Schema Section -->
         <section>
-            <h2>Content</h2>
-            <p>
-                The website will include scripture collections, memory exercises,
-                study tips, and progress tracking tools.
-            </p>
+            <h2>Color Schema</h2>
+            <div class="color-demo">
+                <div class="color-box primary-bg">Dark Blue (#1E3A5F)<br>Headings, Header, Footer, Navigation, Buttons
+                </div>
+                <div class="color-box accent-bg">Gold (#D4A017)<br>Links, Hover Effects, Highlights, Icons</div>
+                <div class="color-box secondary-bg">Light Gray (#F8F9FA)<br>Page Background, Section Backgrounds</div>
+                <div class="color-box white-bg">White (#FFFFFF)<br>Card Backgrounds, Content Areas</div>
+            </div>
+        </section>
+
+        <!-- Typography Section -->
+        <section>
+            <h2>Typography</h2>
+            <ul>
+                <li><strong>Merriweather (serif)</strong> - Used for all headings (h1, h2, h3) - provides a classic,
+                    trustworthy feel appropriate for scripture content</li>
+                <li><strong>Open Sans (sans-serif)</strong> - Used for body text, paragraphs, lists, and navigation -
+                    offers excellent readability on screens</li>
+            </ul>
+        </section>
+
+        <!-- Wireframes Section -->
+        <section>
+            <h2>Wireframes</h2>
+
+            <h3>Mobile View (up to 600px)</h3>
+            <div class="wireframe mobile-wireframe">
+                <div class="wf-header">📖 Scripture Memorizer</div>
+                <div class="wf-nav">☰ Menu | Verses | Progress | Tips</div>
+                <div class="wf-hero">✨ Verse of the Day: John 3:16</div>
+                <div class="wf-card">📚 My Verse Collections</div>
+                <div class="wf-card">🎯 Today's Practice: Fill in the Blank</div>
+                <div class="wf-card">📊 Progress: 12 verses memorized</div>
+                <div class="wf-card">💡 Memory Tip of the Day</div>
+                <div class="wf-footer">🔗 About | Contact | Settings</div>
+            </div>
+
+            <h3>Desktop View (wider than 600px)</h3>
+            <div class="wireframe desktop-wireframe">
+                <div class="wf-header">📖 Scripture Memorizer | Master God's Word</div>
+                <div class="wf-nav">Dashboard | My Verses | Practice | Progress | Collections | Tips | Profile</div>
+                <div class="wf-hero">Hero Banner: Welcome back! Today's verse + Motivational Quote + Quick Practice
+                    Button</div>
+                <div class="wf-grid">
+                    <div class="wf-card">📚 Recent Verses Added</div>
+                    <div class="wf-card">🎯 Practice Mode: Quiz</div>
+                    <div class="wf-card">📊 Progress Chart</div>
+                    <div class="wf-card">💡 Study Tip of the Day</div>
+                </div>
+                <div class="wf-sidebar-layout">
+                    <div class="wf-main">Main Content: Active Memory Exercises & Flashcards</div>
+                    <div class="wf-sidebar">Sidebar: Quick Stats | Verse Search | Daily Challenge</div>
+                </div>
+                <div class="wf-footer">About | Contact | Privacy Policy | Terms of Use | Social Media | Newsletter
+                    Signup</div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2026 Joshua Owusu Obeng</p>
+        <p>&copy; 2026 Joshua Owusu Obeng | Scripture Memorizer Site Plan</p>
     </footer>
-    ```
-
 </body>
 
 </html>
