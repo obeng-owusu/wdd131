@@ -9,9 +9,10 @@ body {
     flex-direction: column;
 }
 
-/* Header */
+/* Header - improved contrast */
 header {
-    background: #333;
+    background: #222;
+    /* Darker for better text contrast */
     color: white;
     padding: 1rem;
     text-align: center;
@@ -46,24 +47,30 @@ header h1 {
     margin-top: 10px;
 }
 
+/* FIXED: Required field - now meets AA contrast requirements */
 .required {
-    color: red;
+    color: #c62828;
+    /* Darker red with sufficient contrast (5.6:1 ratio) */
+    font-weight: bold;
 }
 
+/* FIXED: Optional text - improved contrast */
 .optional {
     font-weight: normal;
     font-size: 0.85em;
-    color: #666;
+    color: #444;
+    /* Darker gray for better readability (8.5:1 ratio) */
 }
 
-/* Select and input fields */
+/* Select and input fields - FIXED border contrast */
 select,
 input[type="text"],
 input[type="date"],
 textarea {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #767676;
+    /* Changed from #ccc to meet AA contrast requirements */
     border-radius: 4px;
     font-size: 1rem;
     box-sizing: border-box;
@@ -174,10 +181,12 @@ textarea {
     margin-top: 20px;
 }
 
-/* Footer */
+/* Footer - improved contrast */
 .common-footer {
-    background: #333;
-    color: white;
+    background: #222;
+    /* Darker background */
+    color: #fff;
+    /* Pure white text for maximum contrast */
     text-align: center;
     padding: 15px;
     margin-top: 20px;
