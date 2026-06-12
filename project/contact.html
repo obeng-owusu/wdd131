@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Scripture Memorizer</title>
+    <meta name="description"
+        content="Have questions or suggestions? Contact the Scripture Memorizer team for support, feedback, or partnership inquiries.">
+    <meta name="author" content="Joshua Obeng">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap"
+        rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">📖 Scripture Memorizer</div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="verses.html">Verses</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-card">
+            <h2>Contact Us</h2>
+            <p>Have questions, suggestions, or prayer requests? We'd love to hear from you!</p>
+
+            <form id="contact-form">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required>
+                <div class="error" id="name-error"></div>
+
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+                <div class="error" id="email-error"></div>
+
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <div class="error" id="message-error"></div>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div id="form-success" class="success-message hidden">
+                ✅ Thank you! Your message has been received. We'll respond within 48 hours.
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Scripture Memorizer | Joshua Obeng | Memorize, Grow, Share</p>
+    </footer>
+</body>
+
+</html>

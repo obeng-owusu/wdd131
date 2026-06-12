@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scripture Quiz - Test Your Memory | Scripture Memorizer</title>
+    <meta name="description"
+        content="Test your Bible verse memorization skills with interactive fill-in-the-blank quizzes. Track your score and improve over time.">
+    <meta name="author" content="Joshua Obeng">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap"
+        rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/storage.js" defer></script>
+    <script src="scripts/api.js" defer></script>
+    <script src="scripts/quiz.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">📖 Scripture Memorizer</div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="verses.html">Verses</a></li>
+                <li><a href="quiz.html" class="active">Quiz</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Scripture Quiz</h2>
+        <div class="card quiz-card">
+            <p id="question" class="quiz-question">Loading question...</p>
+            <input type="text" id="answer" placeholder="Type the missing word or phrase">
+            <button id="submit-btn">Submit Answer</button>
+            <p id="result" class="result-message"></p>
+            <div class="quiz-stats">
+                <p>📊 Score: <span id="score">0</span> | Attempts: <span id="attempts">0</span></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Scripture Memorizer | Joshua Obeng | Memorize, Grow, Share</p>
+    </footer>
+</body>
+
+</html>

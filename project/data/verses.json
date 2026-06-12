@@ -1,0 +1,79 @@
+{
+    "verses": [
+        {
+            "reference": "John 3:16",
+            "text": "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.",
+            "keyword": "loved"
+        },
+        {
+            "reference": "Proverbs 3:5",
+            "text": "Trust in the Lord with all your heart and lean not on your own understanding.",
+            "keyword": "Trust"
+        },
+        {
+            "reference": "Philippians 4:13",
+            "text": "I can do all things through Christ who strengthens me.",
+            "keyword": "Christ"
+        },
+        {
+            "reference": "Jeremiah 29:11",
+            "text": "For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.",
+            "keyword": "plans"
+        },
+        {
+            "reference": "Romans 8:28",
+            "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose.",
+            "keyword": "good"
+        },
+        {
+            "reference": "Psalm 23:1",
+            "text": "The Lord is my shepherd; I shall not want.",
+            "keyword": "shepherd"
+        },
+        {
+            "reference": "Matthew 11:28",
+            "text": "Come to me, all you who are weary and burdened, and I will give you rest.",
+            "keyword": "rest"
+        },
+        {
+            "reference": "Isaiah 40:31",
+            "text": "But those who hope in the Lord will renew their strength.",
+            "keyword": "hope"
+        },
+        {
+            "reference": "Joshua 1:9",
+            "text": "Be strong and courageous. Do not be afraid; for the Lord your God is with you wherever you go.",
+            "keyword": "courageous"
+        },
+        {
+            "reference": "Psalm 119:105",
+            "text": "Your word is a lamp to my feet and a light to my path.",
+            "keyword": "lamp"
+        },
+        {
+            "reference": "Matthew 28:19",
+            "text": "Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit.",
+            "keyword": "disciples"
+        },
+        {
+            "reference": "Romans 12:2",
+            "text": "Do not conform to the pattern of this world, but be transformed by the renewing of your mind.",
+            "keyword": "transformed"
+        },
+        {
+            "reference": "1 Corinthians 13:4",
+            "text": "Love is patient, love is kind. It does not envy, it does not boast, it is not proud.",
+            "keyword": "patient"
+        },
+        {
+            "reference": "Ephesians 2:8",
+            "text": "For it is by grace you have been saved, through faith and this is not from yourselves, it is the gift of God.",
+            "keyword": "grace"
+        },
+        {
+            "reference": "Psalm 27:1",
+            "text": "The Lord is my light and my salvation whom shall I fear? The Lord is the stronghold of my life of whom shall I be afraid?",
+            "keyword": "light"
+        }
+    ]
+}

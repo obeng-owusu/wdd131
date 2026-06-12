@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scripture Library - Scripture Memorizer</title>
+    <meta name="description"
+        content="Browse our collection of Bible verses for memorization. Filter by topic, save favorites, and track your progress.">
+    <meta name="author" content="Joshua Obeng">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap"
+        rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/storage.js" defer></script>
+    <script src="scripts/api.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">📖 Scripture Memorizer</div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="verses.html" class="active">Verses</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Scripture Library</h2>
+        <div id="verse-container" class="verse-grid">
+            <div class="loading">Loading verses...</div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Scripture Memorizer | Joshua Obeng | Memorize, Grow, Share</p>
+    </footer>
+</body>
+
+</html>
